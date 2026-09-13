@@ -664,12 +664,17 @@ that actually has a strategy.
 <div class="service-grid">
 
 <div class="service">
-<div class="service-number">01</div>
-<h3>Social Media Management</h3>
-<p>
-Content scheduling, publishing, platform management,
-engagement and maintaining your brand's online presence.
-</p>
+    <img src="images/social-media-management.jpg" 
+         alt="Social Media Management"
+         class="service-image">
+
+    <div class="service-number">01</div>
+    <h3>Social Media Management</h3>
+
+    <p>
+        Content scheduling, publishing, platform management,
+        engagement and maintaining your brand's online presence.
+    </p>
 </div>
 
 <div class="service">
