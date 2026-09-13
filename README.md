@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -325,6 +325,14 @@ section {
     font-size: 14px;
 }
 
+/* CONTENT WITH A PURPOSE BACKGROUND */
+
+#portfolio {
+    background:
+        linear-gradient(rgba(250,248,246,.86), rgba(250,248,246,.92)),
+        url('https://uploads.onecompiler.io/4534xvdks/4534y479v/content.jpg') center/cover fixed;
+}
+
 /* CONTENT PLANNER */
 
 .planner {
@@ -520,6 +528,308 @@ footer {
     color: #aaa5a1;
     text-align: center;
     font-size: 13px;
+}
+
+/* ATTACHED EDITORIAL IMAGERY */
+
+.hero-card {
+    background: #d9d5ce;
+    min-height: 520px;
+    padding: 0;
+    isolation: isolate;
+}
+
+.hero-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: .92;
+}
+
+.hero-card > div {
+    padding: 45px;
+}
+
+.hero-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(25,22,20,.08), rgba(25,22,20,.58));
+    z-index: 0;
+}
+
+.project-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 290px;
+}
+
+.project-image::before {
+    z-index: 1;
+}
+
+.project-image::after {
+    z-index: 1;
+}
+
+.service:nth-child(1),
+.service:nth-child(4) {
+    background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.75)), url('How to build the perfect florist website - step-by-step guide — Gem Media.jpg') center/cover;
+}
+
+.service:nth-child(2),
+.service:nth-child(5) {
+    background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.75)), url('Maximize Your Business Growth with Hey V_A - Your Ultimate Virtual Business Support.jpg') center/cover;
+}
+
+.service:nth-child(3),
+.service:nth-child(6) {
+    background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.75)), url('How to Build a Personal Brand_ Simple Tips to Stand Out Online.jpg') center/cover;
+}
+
+.planner {
+    background: linear-gradient(90deg, rgba(37,35,34,.98), rgba(37,35,34,.84)), url('download (7).jpg') center 35%/cover;
+}
+
+.price-card {
+    background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(238,227,220,.86)), url('How to Build a Personal Brand_ Simple Tips to Stand Out Online.jpg') center/cover;
+}
+
+.price-card.featured {
+    background: linear-gradient(145deg, rgba(37,35,34,.98), rgba(37,35,34,.84)), url('Maximize Your Business Growth with Hey V_A - Your Ultimate Virtual Business Support.jpg') center/cover;
+}
+
+/* GRAPHICS & VISUAL DETAILS */
+
+.hero-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-card::before,
+.hero-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-card::before {
+    width: 230px;
+    height: 230px;
+    right: -65px;
+    top: 105px;
+    background: rgba(185,142,122,.45);
+}
+
+.hero-card::after {
+    width: 145px;
+    height: 145px;
+    right: 72px;
+    top: 165px;
+    border: 1px solid rgba(143,104,87,.55);
+}
+
+.hero-card > div {
+    position: relative;
+    z-index: 1;
+}
+
+.service {
+    position: relative;
+    overflow: hidden;
+}
+
+.service::after {
+    content: "✦";
+    position: absolute;
+    right: 22px;
+    bottom: 14px;
+    color: var(--soft);
+    font-size: 58px;
+    line-height: 1;
+    transition: .3s;
+}
+
+.service:hover::after {
+    color: var(--accent);
+    transform: rotate(18deg) scale(1.1);
+}
+
+.graphic-label {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+
+    .project-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    min-height: 0;
+    background: linear-gradient(135deg, #eee3dc 0%, #d7b5a3 100%);
+}
+
+.project-image .graphic-label {
+    position: relative;
+    z-index: 2;
+}
+
+.project-image::before,
+.project-image::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+.project-image::before {
+    width: 150px;
+    height: 150px;
+    background: rgba(255,255,255,.48);
+    top: -45px;
+    right: -20px;
+}
+
+.project-image::after {
+    width: 95px;
+    height: 95px;
+    background: var(--accent-dark);
+    bottom: -40px;
+    left: 30px;
+}
+
+.project-image {
+    color: var(--text);
+}
+
+.project-image::first-line {
+    position: relative;
+}
+
+.project-image + .project-info {
+    position: relative;
+}
+
+.day,
+.process,
+.price-card,
+.about-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.day::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: -18px;
+    bottom: -20px;
+    border: 1px solid rgba(215,181,163,.45);
+    border-radius: 50%;
+}
+
+.process::after {
+    content: "→";
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    color: var(--soft);
+    font-size: 28px;
+}
+
+.price-card::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -48px;
+    right: -25px;
+    border-radius: 50%;
+    background: var(--soft);
+}
+
+.price-card.featured::before {
+    background: #45413e;
+}
+
+.about-box {
+    background: linear-gradient(145deg, var(--soft), #d7b5a3);
+}
+
+.about-box img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    opacity: 1;
+    mix-blend-mode: normal;
+}
+
+.about-box::before,
+.about-box::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(143,104,87,.55);
+    transform: rotate(25deg);
+}
+
+.about-box::before {
+    width: 220px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.about-box::after {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-box strong {
+    position: relative;
+    z-index: 1;
+}
+
+.contact {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before,
+.contact::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(143,104,87,.3);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact::before {
+    width: 280px;
+    height: 280px;
+    left: -125px;
+    top: 35px;
+}
+
+.contact::after {
+    width: 190px;
+    height: 190px;
+    right: -80px;
+    bottom: -70px;
+}
+
+.contact .section-container {
+    position: relative;
+    z-index: 1;
 }
 
 /* MOBILE */
@@ -758,7 +1068,7 @@ Beauty
 
 <div class="project" data-category="beauty ugc">
 <div class="project-image">
-SKINCARE
+<span class="graphic-label">SKINCARE</span>
 </div>
 <div class="project-info">
 <small>UGC Campaign</small>
@@ -772,7 +1082,7 @@ to introduce the product naturally.
 
 <div class="project" data-category="strategy">
 <div class="project-image">
-CONTENT
+<span class="graphic-label">CONTENT</span>
 </div>
 <div class="project-info">
 <small>Strategy</small>
@@ -786,7 +1096,7 @@ education, lifestyle and conversion posts.
 
 <div class="project" data-category="beauty">
 <div class="project-image">
-BEAUTY
+<span class="graphic-label">BEAUTY</span>
 </div>
 <div class="project-info">
 <small>Social Campaign</small>
@@ -800,7 +1110,7 @@ trust and product discovery.
 
 <div class="project" data-category="ugc beauty">
 <div class="project-image">
-REVIEW
+<span class="graphic-label">REVIEW</span>
 </div>
 <div class="project-info">
 <small>UGC</small>
@@ -813,8 +1123,8 @@ texture and realistic product benefits.
 </div>
 
 <div class="project" data-category="strategy">
-<div class="project-image">
-SOCIAL
+<div class="project-image" style="background-image: url('How to build the perfect florist website - step-by-step guide — Gem Media.jpg');">
+<span class="graphic-label">SOCIAL</span>
 </div>
 <div class="project-info">
 <small>Strategy</small>
@@ -827,8 +1137,8 @@ to create a stronger brand identity.
 </div>
 
 <div class="project" data-category="ugc">
-<div class="project-image">
-GRWM
+<div class="project-image" style="background-image: url('Maximize Your Business Growth with Hey V_A - Your Ultimate Virtual Business Support.jpg');">
+<span class="graphic-label">GRWM</span>
 </div>
 <div class="project-info">
 <small>UGC</small>
@@ -1044,7 +1354,7 @@ Inquire →
 <div class="section-container about-grid">
 
 <div class="about-box">
-<strong>JH</strong>
+<img src="https://uploads.onecompiler.io/4534xvdks/4534y479v/founder.png" alt="Portrait of the founder">
 </div>
 
 <div class="about-text">
