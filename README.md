@@ -662,11 +662,10 @@ that actually has a strategy.
 </h2>
 
 <div class="service-grid">
-
+    
 <div class="service">
-    <img src="images/social-media-management.jpg" 
-         alt="Social Media Management"
-         class="service-image">
+    <div class="service-number">01</div>
+    <h3>Social Media Management</h3>
 
     <div class="service-number">01</div>
     <h3>Social Media Management</h3>
