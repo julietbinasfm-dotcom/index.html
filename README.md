@@ -1103,12 +1103,12 @@ will actually remember.
 Email Me
 </a>
 
-<a href="https://www.tiktok.com/@imjhooooo?is_from_webapp=1&sender_device=pc" target="_blank">
-    TikTok
+<a href="https://www.tiktok.com/" target="_blank" class="btn btn-secondary">
+TikTok →
 </a>
 
-<a href="https://www.instagram.com/imjhooooo/" target="_blank">
-    Instagram
+<a href="https://www.instagram.com/" target="_blank" class="btn btn-secondary">
+Instagram →
 </a>
 
 </div>
